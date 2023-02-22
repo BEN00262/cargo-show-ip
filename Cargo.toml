@@ -1,0 +1,17 @@
+[package]
+name = "cargo-show-ip"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/BEN00262/cargo-show-ip"
+readme = "README.md"
+description = "simple utility to print your public ip"
+license = "MIT"
+homepage = "https://github.com/BEN00262/cargo-show-ip"
+keywords = ["ip", "show-ip", "rust-show-ip", "cargo-show-ip"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
